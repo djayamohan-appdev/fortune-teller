@@ -28,8 +28,8 @@ Rails.application.routes.draw do
     get("/zodiacs/aquarius", { :controller => "air", :action => "waterbearer" })
   
     get("/zodiacs/cancer", { :controller => "water", :action => "crab" })
-  # get("/zodiac/ scorpio", { :controller => "Water", :action => "scorpion" })
-  # get("/zodiacs/pisces", { :controller => "water", :action => "fish " })
+    get("/zodiacs/scorpio", { :controller => "water", :action => "scorpion" })
+    get("/zodiacs/pisces", { :controller => "water", :action => "fish" })
 
   # PART 3: MORE R→C→A→V PRACTICE
   # ==========================
@@ -46,6 +46,7 @@ Rails.application.routes.draw do
   #  - Write the Ruby to make it dynamic, and work properly.
 
   # /roll/1/6
+  get("/roll/1/6", { :controller =>  "numbers", :action =>  "one_six" })
   # /roll/2/6
   # /roll/3/6
   # /roll/4/6

@@ -23,4 +23,14 @@ class NumbersController < ApplicationController
     render({ :template => "lottery_stuff/unlucky_numbers.html.erb"})
   end
 
+  def one_six
+    @rando = Array.new
+    
+    1.times do
+      @rando.push(rand(1...6))
+    end
+
+     render({ :template => "dice_rolls/one_six_roll.html.erb"})
+  end
+
 end
